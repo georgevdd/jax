@@ -12,14 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
 
 import scipy.stats as osp_stats
 
 from ... import lax
-from ...numpy.lax_numpy import (_constant_like, _promote_args_inexact, _wraps,
+from ...numpy._util import _wraps
+from ...numpy.lax_numpy import (_constant_like, _promote_args_inexact,
                                 where, inf, logical_or)
 
 
